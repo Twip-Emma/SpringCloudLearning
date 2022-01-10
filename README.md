@@ -68,3 +68,23 @@ ribbon:
     clients: # 指定要饥饿加载的服务
       - userservice
 ~~~
+
+## Nacos
+### 引入依赖（夫工程）
+~~~xml
+<dependency>
+    <groupId>com.alibaba.cloud</groupId>
+    <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+    <version>2.2.5.RELEASE</version>
+    <type>pom</type>
+    <scope>import</scope>
+</dependency>
+~~~
+### 客户端依赖
+```xml
+<!-- nacos客户端依赖包 -->
+<dependency>
+    <groupId>com.alibaba.cloud</groupId>
+    <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+</dependency>
+```
