@@ -88,3 +88,25 @@ ribbon:
     <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
 </dependency>
 ```
+### 设置集群
+~~~yml
+spring:
+  cloud:
+    nacos:
+      discovery:
+        cluster-name: HZ # 设置集群名称
+~~~
+### 设置负载均衡（同集群优先）
+~~~yml
+userservice:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.alibaba.cloud.nacos.ribbon.NacosRule # 负载均衡规则
+~~~
+### 设置命名空间
+~~~yml
+spring:
+  cloud:
+    nacos:
+      discovery:
+        namespace: 你的环境ID
+~~~
