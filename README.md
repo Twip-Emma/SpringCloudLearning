@@ -110,3 +110,11 @@ spring:
       discovery:
         namespace: 你的环境ID
 ~~~
+### 设置是否是临时实例
+~~~yml
+spring:
+  cloud:
+    nacos:
+      discovery:
+        ephemeral: false # 设置是否是临时实例
+~~~
