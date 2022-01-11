@@ -1,5 +1,6 @@
 package cn.itcast.order;
 
+import cn.itcast.feign.clients.UserClient;
 import cn.itcast.feign.config.DefaultFeignConfiguration;
 //import cn.itcast.order.config.DefaultFeignConfiguration;
 import com.netflix.loadbalancer.IRule;
@@ -14,7 +15,8 @@ import org.springframework.web.client.RestTemplate;
 
 @MapperScan("cn.itcast.order.mapper")
 @SpringBootApplication
-@EnableFeignClients(defaultConfiguration = DefaultFeignConfiguration.class) //设置为全局有效
+@EnableFeignClients(defaultConfiguration = DefaultFeignConfiguration.class,
+                    clients = {UserClient.class}) //设置为全局有效
 public class OrderApplication {
 
     public static void main(String[] args) {
