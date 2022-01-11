@@ -10,9 +10,9 @@ spring:
     name: orderservice # order服务名称
   cloud:
     nacos:
-      server-addr: localhost:8848
-      discovery:
-        cluster-name: HZ # 设置集群名称
+      server-addr: localhost:81
+#      discovery:
+#        cluster-name: HZ # 设置集群名称
 mybatis:
   type-aliases-package: cn.itcast.user.pojo
   configuration:
@@ -34,3 +34,10 @@ ribbon:
     enabled: true # 饥饿加载：开
     clients: # 指定要饥饿加载的服务
       - userservice
+
+#feign:
+#  client:
+#    config:
+#      default: # 针对某个微服务的配置
+#        # 这里用 default 就是全局配置
+#        loggerLevel: FULL #  日志级别
