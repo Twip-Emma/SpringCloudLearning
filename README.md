@@ -118,3 +118,36 @@ spring:
       discovery:
         ephemeral: false # 设置是否是临时实例
 ~~~
+
+# SpringCloud学习笔记Day2
+## Nacos
+### 引入nacos配置管理依赖
+~~~xml
+<!--引入nacos的配置依赖-->
+<dependency>
+    <groupId>com.alibaba.cloud</groupId>
+    <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+</dependency>
+~~~
+### 引导文件bootstrap.yml基本配置
+~~~yml
+spring:
+  application:
+    name: userservice
+  profiles:
+    active: dev # 环境
+  cloud:
+    nacos:
+      server-addr: localhost:8848 # nacos地址
+      config:
+        file-extension: yaml # 文件后缀
+~~~
+### nacos配置热更新
+~~~java
+  @Data
+  @Component
+  @ConfigurationProperties(prefix = "pattern")
+  public class PatternProperties {
+  private String dateformat;
+}
+~~~
