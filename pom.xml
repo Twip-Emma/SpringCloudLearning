@@ -13,6 +13,8 @@
         <module>eureka-server</module>
         <module>feign-api</module>
         <module>gateway</module>
+        <module>consumer</module>
+        <module>publisher</module>
     </modules>
 
     <packaging>pom</packaging>
@@ -63,6 +65,21 @@
                 <groupId>org.mybatis.spring.boot</groupId>
                 <artifactId>mybatis-spring-boot-starter</artifactId>
                 <version>${mybatis.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+            </dependency>
+            <!--AMQP依赖，包含RabbitMQ-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-amqp</artifactId>
+            </dependency>
+            <!--单元测试-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-test</artifactId>
             </dependency>
         </dependencies>
     </dependencyManagement>
