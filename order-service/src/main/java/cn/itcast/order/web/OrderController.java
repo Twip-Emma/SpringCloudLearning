@@ -23,7 +23,15 @@ public class OrderController {
 
     @GetMapping("/query")
     public String queryOrder(){
+        orderService.queryGoods();
+        System.out.println("查询订单");
         return "查询订单成功！";
+    }
+    @GetMapping("/save")
+    public String saveOrder(){
+        orderService.queryGoods();
+        System.out.println("新增订单");
+        return "新增订单成功";
     }
 
     @GetMapping("/update")

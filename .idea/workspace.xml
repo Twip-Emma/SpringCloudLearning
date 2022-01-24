@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ddc25d7-6b6b-47bd-9304-d234d9fc8d43" name="默认变更列表" comment="引入sentinel依赖">
+    <list default="true" id="9ddc25d7-6b6b-47bd-9304-d234d9fc8d43" name="默认变更列表" comment="限流 关联模式">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/cn/itcast/order/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/cn/itcast/order/service/OrderService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order-service/src/main/java/cn/itcast/order/web/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/cn/itcast/order/web/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/target/classes/cn/itcast/order/web/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/target/classes/cn/itcast/order/web/OrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,7 +227,7 @@
       <workItem from="1642310239050" duration="50000" />
       <workItem from="1642315731907" duration="856000" />
       <workItem from="1643001429974" duration="688000" />
-      <workItem from="1643002416192" duration="3847000" />
+      <workItem from="1643002416192" duration="4435000" />
     </task>
     <task id="LOCAL-00001" summary="初始化">
       <created>1641796215845</created>
@@ -319,7 +320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643005961890</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="限流 关联模式">
+      <created>1643006364890</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1643006364890</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -349,7 +357,8 @@
     <MESSAGE value="使用原生rabbitmq api和spring cloud提供的spring amqp api" />
     <MESSAGE value="简易重构：修复运行时报错的问题，修改部分配置（未使用反代）为服务保护框架做准备" />
     <MESSAGE value="引入sentinel依赖" />
-    <option name="LAST_COMMIT_MESSAGE" value="引入sentinel依赖" />
+    <MESSAGE value="限流 关联模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="限流 关联模式" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
