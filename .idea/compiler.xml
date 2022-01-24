@@ -7,13 +7,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="publisher" />
         <module name="order-service" />
         <module name="user-service" />
         <module name="eureka-server" />
         <module name="feign-api" />
         <module name="gateway" />
-        <module name="consumer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
