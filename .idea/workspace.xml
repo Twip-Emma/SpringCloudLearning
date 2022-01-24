@@ -4,32 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ddc25d7-6b6b-47bd-9304-d234d9fc8d43" name="默认变更列表" comment="使用网关，并且创建本地过滤器，路由过滤器，全局过滤器，并且比较之间的异同，作用，以及优先顺序；解决跨域">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_rabbitmq_amqp_client_5_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_amqp_spring_amqp_2_2_15_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_amqp_spring_rabbit_2_2_15_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_retry_spring_retry_1_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_5_2_13_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_3_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/consumer.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/mq/ConsumerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/consumer/src/main/java/mq/listener/SpringAMQPListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publisher/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publisher/publisher.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publisher/src/main/java/mq/PublisherApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publisher/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publisher/src/test/java/helloworld/PublisherTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publisher/src/test/java/helloworld/SpringAmqpTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="9ddc25d7-6b6b-47bd-9304-d234d9fc8d43" name="默认变更列表" comment="使用原生rabbitmq api和spring cloud提供的spring amqp api">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/cn/itcast/user/web/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/cn/itcast/user/web/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/target/classes/cn/itcast/user/web/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/target/classes/cn/itcast/user/web/UserController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +59,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/consumer/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/consumer/src/main/resources" />
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -224,10 +205,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.GatewayApplication" />
         <item itemvalue="Spring Boot.ConsumerApplication" />
         <item itemvalue="JUnit.PublisherTest.testSendMessage" />
         <item itemvalue="JUnit.SpringAmqpTest.testSimpleQueue" />
-        <item itemvalue="Spring Boot.GatewayApplication" />
         <item itemvalue="Spring Boot.EurekaApplication" />
       </list>
     </recent_temporary>
@@ -246,7 +227,9 @@
       <workItem from="1642309318590" duration="107000" />
       <workItem from="1642309654596" duration="45000" />
       <workItem from="1642310239050" duration="50000" />
-      <workItem from="1642315731907" duration="602000" />
+      <workItem from="1642315731907" duration="856000" />
+      <workItem from="1643001429974" duration="688000" />
+      <workItem from="1643002416192" duration="448000" />
     </task>
     <task id="LOCAL-00001" summary="初始化">
       <created>1641796215845</created>
@@ -311,7 +294,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641884189077</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="使用原生rabbitmq api和spring cloud提供的spring amqp api">
+      <created>1642316590578</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1642316590578</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -338,7 +328,8 @@
     <MESSAGE value="改造order模块，抽取其中的feign相关配置组成一个新模块" />
     <MESSAGE value="改造order模块，抽取其中的feign相关配置组成一个新模块，修复启动失败的BUG" />
     <MESSAGE value="使用网关，并且创建本地过滤器，路由过滤器，全局过滤器，并且比较之间的异同，作用，以及优先顺序；解决跨域" />
-    <option name="LAST_COMMIT_MESSAGE" value="使用网关，并且创建本地过滤器，路由过滤器，全局过滤器，并且比较之间的异同，作用，以及优先顺序；解决跨域" />
+    <MESSAGE value="使用原生rabbitmq api和spring cloud提供的spring amqp api" />
+    <option name="LAST_COMMIT_MESSAGE" value="使用原生rabbitmq api和spring cloud提供的spring amqp api" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
