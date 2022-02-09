@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ddc25d7-6b6b-47bd-9304-d234d9fc8d43" name="默认变更列表" comment="整合FeignClient，服务降级，服务熔断">
-      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/cn/itcast/order/sentinel/HeaderOriginParser.java" afterDir="false" />
+    <list default="true" id="9ddc25d7-6b6b-47bd-9304-d234d9fc8d43" name="默认变更列表" comment="授权规则">
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/cn/itcast/order/sentinel/SentinelExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/user-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/user-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/target/classes/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,7 +229,7 @@
       <workItem from="1643002416192" duration="6393000" />
       <workItem from="1643024688967" duration="3260000" />
       <workItem from="1643033581884" duration="19000" />
-      <workItem from="1644372212352" duration="4356000" />
+      <workItem from="1644372212352" duration="4768000" />
     </task>
     <task id="LOCAL-00001" summary="初始化">
       <created>1641796215845</created>
@@ -352,7 +350,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644375372887</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="授权规则">
+      <created>1644376915493</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1644376915493</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -386,7 +391,8 @@
     <MESSAGE value="限流 链路模式" />
     <MESSAGE value="限流 热点限流" />
     <MESSAGE value="整合FeignClient，服务降级，服务熔断" />
-    <option name="LAST_COMMIT_MESSAGE" value="整合FeignClient，服务降级，服务熔断" />
+    <MESSAGE value="授权规则" />
+    <option name="LAST_COMMIT_MESSAGE" value="授权规则" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
