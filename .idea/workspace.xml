@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ddc25d7-6b6b-47bd-9304-d234d9fc8d43" name="默认变更列表" comment="限流 链路模式">
+    <list default="true" id="9ddc25d7-6b6b-47bd-9304-d234d9fc8d43" name="默认变更列表" comment="限流 热点限流">
+      <change afterPath="$PROJECT_DIR$/feign-api/src/main/java/cn/itcast/feign/clients/fallback/UserClientFallbackFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/cn/itcast/order/web/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/cn/itcast/order/web/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign-api/src/main/java/cn/itcast/feign/clients/UserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/feign-api/src/main/java/cn/itcast/feign/clients/UserClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign-api/src/main/java/cn/itcast/feign/config/DefaultFeignConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/feign-api/src/main/java/cn/itcast/feign/config/DefaultFeignConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign-api/target/classes/cn/itcast/feign/clients/UserClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/feign-api/target/classes/cn/itcast/feign/clients/UserClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feign-api/target/classes/cn/itcast/feign/config/DefaultFeignConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/feign-api/target/classes/cn/itcast/feign/config/DefaultFeignConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/cn/itcast/user/web/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/cn/itcast/user/web/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/target/classes/cn/itcast/user/web/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/target/classes/cn/itcast/user/web/UserController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,17 +91,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.ConsumerApplication">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PublisherTest.testSendMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="publisher" />
       <extension name="coverage">
@@ -225,7 +222,10 @@
       <workItem from="1642310239050" duration="50000" />
       <workItem from="1642315731907" duration="856000" />
       <workItem from="1643001429974" duration="688000" />
-      <workItem from="1643002416192" duration="5679000" />
+      <workItem from="1643002416192" duration="6393000" />
+      <workItem from="1643024688967" duration="3260000" />
+      <workItem from="1643033581884" duration="19000" />
+      <workItem from="1644372212352" duration="2727000" />
     </task>
     <task id="LOCAL-00001" summary="初始化">
       <created>1641796215845</created>
@@ -332,7 +332,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643007601320</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="限流 热点限流">
+      <created>1643008770082</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1643008770082</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -364,7 +371,8 @@
     <MESSAGE value="引入sentinel依赖" />
     <MESSAGE value="限流 关联模式" />
     <MESSAGE value="限流 链路模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="限流 链路模式" />
+    <MESSAGE value="限流 热点限流" />
+    <option name="LAST_COMMIT_MESSAGE" value="限流 热点限流" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
